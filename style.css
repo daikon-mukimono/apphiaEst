@@ -19,11 +19,24 @@ div{
 }
 
 .box:hover{
-  transform:translate(12px);
+  transform:scale(1.07);
   z-index:1;
 }
 
+.overlay{
+  position:absolute;
+  margin:0;
+  height: 100%;
+  width: 100%;
+  opacity:0;
+  background color: black;
+  transition: .5s ease;
+  text: white;
+}
 
+.box:hover .overlay{
+  opacity:1;
+}
 
   /* NAV */
   .main-nav{
@@ -107,23 +120,27 @@ li{
 p{
 font-family: sans-serif;
 color: black;
+font-size: 26px;
+margin: 15px;
+text-align: justify;
 }
 
 .box{
   background-color: #444;
-  padding: 90px;
+  padding: 80px;
   margin: 20px;
+  font-size: 12px;
 }
 
 footer{
   /* text-align:center; */
-  height: 42px;
+  height: 20px;
 }
+
 
 .credit{
   text-align: right;
   font-size: 14px;
-  /* bottom:0px; */
 }
 
 .green{
@@ -136,4 +153,11 @@ footer{
 
 .blue{
     background: #7abcff; /* Old browsers */
+    /* font-size: 12px; */
+}
+
+.contact-form{
+  margin: 17px;;
+  color:black;
+  font-size: 14px;
 }
