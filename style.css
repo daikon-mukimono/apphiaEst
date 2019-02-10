@@ -15,8 +15,7 @@ body{
 }
 
 .box:hover{
-  transform:scale(1.01);
-  transform:translate(3px);
+  transform:translate(12px);
   z-index:1;
 }
 
@@ -44,17 +43,26 @@ body{
     width: 100%;
   } */
 
-  li{
-    padding: 20px;
+li{
+  color: black;
+}
+
+  .nav> li{
+    padding: 50px;
     display:inline;
     list-style: none;
     /* width: 100%; */
   }
+
 @media only screen and (min-width: 300px) {
   .push{
      margin-left: auto;
      /* max-width: 300px; */
   }
+}
+
+.navi{
+    padding: 20px;
 }
 
   a{
